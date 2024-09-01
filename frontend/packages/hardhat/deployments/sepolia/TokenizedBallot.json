@@ -1,0 +1,303 @@
+{
+  "address": "0xAa88Ca8c26528E0Afc63f756BaEBBDA4cd7F1468",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "bytes32[]",
+          "name": "proposalNames",
+          "type": "bytes32[]"
+        },
+        {
+          "internalType": "contract IERC20Token",
+          "name": "_tokenContract",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "_targetBlockNumber",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "voter",
+          "type": "address"
+        }
+      ],
+      "name": "getVotePower",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "votePower_",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "name": "proposals",
+      "outputs": [
+        {
+          "internalType": "bytes32",
+          "name": "name",
+          "type": "bytes32"
+        },
+        {
+          "internalType": "uint256",
+          "name": "voteCount",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "name": "spendVotePower",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "targetBlockNumber",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "tokenContract",
+      "outputs": [
+        {
+          "internalType": "contract IERC20Token",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "proposal",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "amount",
+          "type": "uint256"
+        }
+      ],
+      "name": "vote",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "winnerName",
+      "outputs": [
+        {
+          "internalType": "bytes32",
+          "name": "winnerName_",
+          "type": "bytes32"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "winningProposal",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "winningProposal_",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "transactionHash": "0x087ef4e8f41dc9859fb2f3e4580b9d0bc05d156f5c1a13c98ddbcac584b9fad1",
+  "receipt": {
+    "to": null,
+    "from": "0x9B389E744A464A0C3705Ee47dF9E964B22c950d3",
+    "contractAddress": "0xAa88Ca8c26528E0Afc63f756BaEBBDA4cd7F1468",
+    "transactionIndex": 22,
+    "gasUsed": "469223",
+    "logsBloom": "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+    "blockHash": "0x30a64df232545f1908652e94c23fafc21fd63b3be7d7609938d0964c4e869252",
+    "transactionHash": "0x087ef4e8f41dc9859fb2f3e4580b9d0bc05d156f5c1a13c98ddbcac584b9fad1",
+    "logs": [],
+    "blockNumber": 6612679,
+    "cumulativeGasUsed": "8220490",
+    "status": 1,
+    "byzantium": true
+  },
+  "args": [
+    [
+      "0x4361747300000000000000000000000000000000000000000000000000000000",
+      "0x446f677300000000000000000000000000000000000000000000000000000000",
+      "0x5261747300000000000000000000000000000000000000000000000000000000"
+    ],
+    "0xEfEA5a3e02A08d273b890B11c9282D1046bb898e",
+    6612985
+  ],
+  "numDeployments": 1,
+  "solcInputHash": "93737471706b3cfeef81ff59f7c20121",
+  "metadata": "{\"compiler\":{\"version\":\"0.8.20+commit.a1b79de6\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"bytes32[]\",\"name\":\"proposalNames\",\"type\":\"bytes32[]\"},{\"internalType\":\"contract IERC20Token\",\"name\":\"_tokenContract\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"_targetBlockNumber\",\"type\":\"uint256\"}],\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"voter\",\"type\":\"address\"}],\"name\":\"getVotePower\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"votePower_\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"name\":\"proposals\",\"outputs\":[{\"internalType\":\"bytes32\",\"name\":\"name\",\"type\":\"bytes32\"},{\"internalType\":\"uint256\",\"name\":\"voteCount\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"name\":\"spendVotePower\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"targetBlockNumber\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"tokenContract\",\"outputs\":[{\"internalType\":\"contract IERC20Token\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"proposal\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"amount\",\"type\":\"uint256\"}],\"name\":\"vote\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"winnerName\",\"outputs\":[{\"internalType\":\"bytes32\",\"name\":\"winnerName_\",\"type\":\"bytes32\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"winningProposal\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"winningProposal_\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{\"winningProposal()\":{\"details\":\"Computes the winning proposal taking all previous votes into account.\"}},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{\"constructor\":{\"notice\":\"Create a new ballot to choose one of `proposalNames`.\"},\"vote(uint256,uint256)\":{\"notice\":\"Give your vote (including votes delegated to you) to proposal `proposals[proposal].name`.\"}},\"version\":1}},\"settings\":{\"compilationTarget\":{\"contracts/TokenizedBallot.sol\":\"TokenizedBallot\"},\"evmVersion\":\"paris\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\",\"useLiteralContent\":true},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"contracts/TokenizedBallot.sol\":{\"content\":\"// SPDX-License-Identifier: GPL-3.0\\r\\npragma solidity >=0.7.0 <0.9.0;\\r\\n\\r\\n// Import the IMyToken interface from the MyToken contract\\r\\ninterface IERC20Token {\\r\\n    function getPastVotes(address, uint256) external view returns (uint256);\\r\\n}\\r\\n\\r\\ncontract TokenizedBallot {\\r\\n    // This is a type for a single proposal.\\r\\n    struct Proposal {\\r\\n        bytes32 name;\\r\\n        uint voteCount;\\r\\n    }\\r\\n\\r\\n    // A dynamically-sized array of `Proposal` structs.\\r\\n    Proposal[] public proposals;\\r\\n    IERC20Token public tokenContract;\\r\\n    uint256 public targetBlockNumber;\\r\\n    mapping(address => uint256) public spendVotePower;\\r\\n\\r\\n    /// Create a new ballot to choose one of `proposalNames`.\\r\\n    constructor(\\r\\n        bytes32[] memory proposalNames,\\r\\n        IERC20Token _tokenContract,\\r\\n        uint256 _targetBlockNumber\\r\\n    ) {\\r\\n        tokenContract = IERC20Token(_tokenContract);\\r\\n        targetBlockNumber = _targetBlockNumber;\\r\\n        // For each of the provided proposal names,\\r\\n        // create a new proposal object and add it\\r\\n        // to the end of the array.\\r\\n        for (uint i = 0; i < proposalNames.length; i++) {\\r\\n            // `Proposal({...})` creates a temporary\\r\\n            // Proposal object and `proposals.push(...)`\\r\\n            // appends it to the end of `proposals`.\\r\\n            proposals.push(Proposal({name: proposalNames[i], voteCount: 0}));\\r\\n        }\\r\\n    }\\r\\n\\r\\n    /// Give your vote (including votes delegated to you)\\r\\n    /// to proposal `proposals[proposal].name`.\\r\\n    function vote(uint proposal, uint256 amount) external {\\r\\n        // TODO: Implement vote function\\r\\n        uint256 senderVotingPower = getVotePower(msg.sender);\\r\\n        require(\\r\\n            senderVotingPower >= amount,\\r\\n            \\\"TokenizedBallot: insufficient voting power\\\"\\r\\n        );\\r\\n        spendVotePower[msg.sender] += amount;\\r\\n        proposals[proposal].voteCount += amount;\\r\\n    }\\r\\n\\r\\n    function getVotePower(\\r\\n        address voter\\r\\n    ) public view returns (uint256 votePower_) {\\r\\n        votePower_ =\\r\\n            tokenContract.getPastVotes(voter, targetBlockNumber) -\\r\\n            spendVotePower[voter];\\r\\n    }\\r\\n\\r\\n    /// @dev Computes the winning proposal taking all\\r\\n    /// previous votes into account.\\r\\n    function winningProposal() public view returns (uint winningProposal_) {\\r\\n        uint winningVoteCount = 0;\\r\\n        for (uint p = 0; p < proposals.length; p++) {\\r\\n            if (proposals[p].voteCount > winningVoteCount) {\\r\\n                winningVoteCount = proposals[p].voteCount;\\r\\n                winningProposal_ = p;\\r\\n            }\\r\\n        }\\r\\n    }\\r\\n\\r\\n    // Calls winningProposal() function to get the index\\r\\n    // of the winner contained in the proposals array and then\\r\\n    // returns the name of the winner\\r\\n    function winnerName() external view returns (bytes32 winnerName_) {\\r\\n        winnerName_ = proposals[winningProposal()].name;\\r\\n    }\\r\\n}\\r\\n\",\"keccak256\":\"0x213f44339987f8df7f500870b16224f6ec51f5bff39fb33656dfe74a0ee17ecb\",\"license\":\"GPL-3.0\"}},\"version\":1}",
+  "bytecode": "0x608060405234801561001057600080fd5b506040516106f03803806106f083398101604081905261002f91610100565b600180546001600160a01b0319166001600160a01b038416179055600281905560005b83518110156100c5576000604051806040016040528086848151811061007a5761007a6101d8565b602090810291909101810151825260009181018290528354600181810186559483529181902083516002909302019182559190910151910155806100bd816101ee565b915050610052565b50505050610215565b634e487b7160e01b600052604160045260246000fd5b80516001600160a01b03811681146100fb57600080fd5b919050565b60008060006060848603121561011557600080fd5b83516001600160401b038082111561012c57600080fd5b818601915086601f83011261014057600080fd5b8151602082821115610154576101546100ce565b8160051b604051601f19603f83011681018181108682111715610179576101796100ce565b60405292835281830193508481018201928a84111561019757600080fd5b948201945b838610156101b55785518552948201949382019361019c565b97506101c490508882016100e4565b955050505050604084015190509250925092565b634e487b7160e01b600052603260045260246000fd5b60006001820161020e57634e487b7160e01b600052601160045260246000fd5b5060010190565b6104cc806102246000396000f3fe608060405234801561001057600080fd5b50600436106100885760003560e01c8063b384abef1161005b578063b384abef14610104578063bb9c092014610119578063d51af1861461012c578063e2ba53f01461014c57600080fd5b8063013cf08b1461008d5780632a8cd29e146100ba57806355a373d6146100d1578063609ff1bd146100fc575b600080fd5b6100a061009b3660046103a7565b610154565b604080519283526020830191909152015b60405180910390f35b6100c360025481565b6040519081526020016100b1565b6001546100e4906001600160a01b031681565b6040516001600160a01b0390911681526020016100b1565b6100c3610182565b6101176101123660046103c0565b6101ff565b005b6100c36101273660046103e2565b6102d7565b6100c361013a3660046103e2565b60036020526000908152604090205481565b6100c3610375565b6000818154811061016457600080fd5b60009182526020909120600290910201805460019091015490915082565b600080805b6000548110156101fa5781600082815481106101a5576101a5610412565b90600052602060002090600202016001015411156101e857600081815481106101d0576101d0610412565b90600052602060002090600202016001015491508092505b806101f28161043e565b915050610187565b505090565b600061020a336102d7565b9050818110156102735760405162461bcd60e51b815260206004820152602a60248201527f546f6b656e697a656442616c6c6f743a20696e73756666696369656e7420766f6044820152693a34b733903837bbb2b960b11b606482015260840160405180910390fd5b3360009081526003602052604081208054849290610292908490610457565b9250508190555081600084815481106102ad576102ad610412565b906000526020600020906002020160010160008282546102cd9190610457565b9091555050505050565b6001600160a01b03818116600081815260036020526040808220546001546002549251630748d63560e31b81526004810195909552602485019290925291939192911690633a46b1a890604401602060405180830381865afa158015610341573d6000803e3d6000fd5b505050506040513d601f19601f82011682018060405250810190610365919061046a565b61036f9190610483565b92915050565b600080610380610182565b8154811061039057610390610412565b906000526020600020906002020160000154905090565b6000602082840312156103b957600080fd5b5035919050565b600080604083850312156103d357600080fd5b50508035926020909101359150565b6000602082840312156103f457600080fd5b81356001600160a01b038116811461040b57600080fd5b9392505050565b634e487b7160e01b600052603260045260246000fd5b634e487b7160e01b600052601160045260246000fd5b60006001820161045057610450610428565b5060010190565b8082018082111561036f5761036f610428565b60006020828403121561047c57600080fd5b5051919050565b8181038181111561036f5761036f61042856fea26469706673582212207595c8c4b2deb390846de44a9a79e34e2e503b5a29e4654812fb9e761c7fdf3864736f6c63430008140033",
+  "deployedBytecode": "0x608060405234801561001057600080fd5b50600436106100885760003560e01c8063b384abef1161005b578063b384abef14610104578063bb9c092014610119578063d51af1861461012c578063e2ba53f01461014c57600080fd5b8063013cf08b1461008d5780632a8cd29e146100ba57806355a373d6146100d1578063609ff1bd146100fc575b600080fd5b6100a061009b3660046103a7565b610154565b604080519283526020830191909152015b60405180910390f35b6100c360025481565b6040519081526020016100b1565b6001546100e4906001600160a01b031681565b6040516001600160a01b0390911681526020016100b1565b6100c3610182565b6101176101123660046103c0565b6101ff565b005b6100c36101273660046103e2565b6102d7565b6100c361013a3660046103e2565b60036020526000908152604090205481565b6100c3610375565b6000818154811061016457600080fd5b60009182526020909120600290910201805460019091015490915082565b600080805b6000548110156101fa5781600082815481106101a5576101a5610412565b90600052602060002090600202016001015411156101e857600081815481106101d0576101d0610412565b90600052602060002090600202016001015491508092505b806101f28161043e565b915050610187565b505090565b600061020a336102d7565b9050818110156102735760405162461bcd60e51b815260206004820152602a60248201527f546f6b656e697a656442616c6c6f743a20696e73756666696369656e7420766f6044820152693a34b733903837bbb2b960b11b606482015260840160405180910390fd5b3360009081526003602052604081208054849290610292908490610457565b9250508190555081600084815481106102ad576102ad610412565b906000526020600020906002020160010160008282546102cd9190610457565b9091555050505050565b6001600160a01b03818116600081815260036020526040808220546001546002549251630748d63560e31b81526004810195909552602485019290925291939192911690633a46b1a890604401602060405180830381865afa158015610341573d6000803e3d6000fd5b505050506040513d601f19601f82011682018060405250810190610365919061046a565b61036f9190610483565b92915050565b600080610380610182565b8154811061039057610390610412565b906000526020600020906002020160000154905090565b6000602082840312156103b957600080fd5b5035919050565b600080604083850312156103d357600080fd5b50508035926020909101359150565b6000602082840312156103f457600080fd5b81356001600160a01b038116811461040b57600080fd5b9392505050565b634e487b7160e01b600052603260045260246000fd5b634e487b7160e01b600052601160045260246000fd5b60006001820161045057610450610428565b5060010190565b8082018082111561036f5761036f610428565b60006020828403121561047c57600080fd5b5051919050565b8181038181111561036f5761036f61042856fea26469706673582212207595c8c4b2deb390846de44a9a79e34e2e503b5a29e4654812fb9e761c7fdf3864736f6c63430008140033",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {
+      "winningProposal()": {
+        "details": "Computes the winning proposal taking all previous votes into account."
+      }
+    },
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {
+      "constructor": {
+        "notice": "Create a new ballot to choose one of `proposalNames`."
+      },
+      "vote(uint256,uint256)": {
+        "notice": "Give your vote (including votes delegated to you) to proposal `proposals[proposal].name`."
+      }
+    },
+    "version": 1
+  },
+  "storageLayout": {
+    "storage": [
+      {
+        "astId": 8385,
+        "contract": "contracts/TokenizedBallot.sol:TokenizedBallot",
+        "label": "proposals",
+        "offset": 0,
+        "slot": "0",
+        "type": "t_array(t_struct(Proposal)8381_storage)dyn_storage"
+      },
+      {
+        "astId": 8388,
+        "contract": "contracts/TokenizedBallot.sol:TokenizedBallot",
+        "label": "tokenContract",
+        "offset": 0,
+        "slot": "1",
+        "type": "t_contract(IERC20Token)8376"
+      },
+      {
+        "astId": 8390,
+        "contract": "contracts/TokenizedBallot.sol:TokenizedBallot",
+        "label": "targetBlockNumber",
+        "offset": 0,
+        "slot": "2",
+        "type": "t_uint256"
+      },
+      {
+        "astId": 8394,
+        "contract": "contracts/TokenizedBallot.sol:TokenizedBallot",
+        "label": "spendVotePower",
+        "offset": 0,
+        "slot": "3",
+        "type": "t_mapping(t_address,t_uint256)"
+      }
+    ],
+    "types": {
+      "t_address": {
+        "encoding": "inplace",
+        "label": "address",
+        "numberOfBytes": "20"
+      },
+      "t_array(t_struct(Proposal)8381_storage)dyn_storage": {
+        "base": "t_struct(Proposal)8381_storage",
+        "encoding": "dynamic_array",
+        "label": "struct TokenizedBallot.Proposal[]",
+        "numberOfBytes": "32"
+      },
+      "t_bytes32": {
+        "encoding": "inplace",
+        "label": "bytes32",
+        "numberOfBytes": "32"
+      },
+      "t_contract(IERC20Token)8376": {
+        "encoding": "inplace",
+        "label": "contract IERC20Token",
+        "numberOfBytes": "20"
+      },
+      "t_mapping(t_address,t_uint256)": {
+        "encoding": "mapping",
+        "key": "t_address",
+        "label": "mapping(address => uint256)",
+        "numberOfBytes": "32",
+        "value": "t_uint256"
+      },
+      "t_struct(Proposal)8381_storage": {
+        "encoding": "inplace",
+        "label": "struct TokenizedBallot.Proposal",
+        "members": [
+          {
+            "astId": 8378,
+            "contract": "contracts/TokenizedBallot.sol:TokenizedBallot",
+            "label": "name",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_bytes32"
+          },
+          {
+            "astId": 8380,
+            "contract": "contracts/TokenizedBallot.sol:TokenizedBallot",
+            "label": "voteCount",
+            "offset": 0,
+            "slot": "1",
+            "type": "t_uint256"
+          }
+        ],
+        "numberOfBytes": "64"
+      },
+      "t_uint256": {
+        "encoding": "inplace",
+        "label": "uint256",
+        "numberOfBytes": "32"
+      }
+    }
+  }
+}
