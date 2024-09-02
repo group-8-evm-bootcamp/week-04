@@ -7,7 +7,7 @@ import { GenericContractsDeclaration } from "~~/utils/scaffold-eth/contract";
 const deployedContracts = {
   11155111: {
     ERC20Token: {
-      address: "0xEfEA5a3e02A08d273b890B11c9282D1046bb898e",
+      address: "0x97f7fC5fD2cF11E31053621f9AC5AdCC82895749",
       abi: [
         {
           inputs: [
@@ -1185,7 +1185,7 @@ const deployedContracts = {
       },
     },
     TokenizedBallot: {
-      address: "0xF4deEfd64952a7969675d3dA5F7DC81b3cc12155",
+      address: "0x9d40F42EeeFaAf53C0f8ffdD904F4aFAAC5f1130",
       abi: [
         {
           inputs: [
@@ -1207,6 +1207,31 @@ const deployedContracts = {
           ],
           stateMutability: "nonpayable",
           type: "constructor",
+        },
+        {
+          anonymous: false,
+          inputs: [
+            {
+              indexed: true,
+              internalType: "address",
+              name: "_voter",
+              type: "address",
+            },
+            {
+              indexed: false,
+              internalType: "uint256",
+              name: "_proposal",
+              type: "uint256",
+            },
+            {
+              indexed: false,
+              internalType: "uint256",
+              name: "_amount",
+              type: "uint256",
+            },
+          ],
+          name: "Vote",
+          type: "event",
         },
         {
           inputs: [

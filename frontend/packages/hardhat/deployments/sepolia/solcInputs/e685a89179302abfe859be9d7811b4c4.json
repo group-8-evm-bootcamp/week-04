@@ -1,0 +1,36 @@
+{
+  "language": "Solidity",
+  "sources": {
+    "contracts/TokenizedBallot.sol": {
+      "content": "// SPDX-License-Identifier: GPL-3.0\r\npragma solidity >=0.7.0 <0.9.0;\r\n\r\n// Import the IMyToken interface from the MyToken contract\r\ninterface IERC20Token {\r\n    function getPastVotes(address, uint256) external view returns (uint256);\r\n}\r\n\r\ncontract TokenizedBallot {\r\n    event Vote(address indexed _voter, uint256 _proposal, uint256 _amount);\r\n    // This is a type for a single proposal.\r\n    struct Proposal {\r\n        bytes32 name;\r\n        uint voteCount;\r\n    }\r\n\r\n    // A dynamically-sized array of `Proposal` structs.\r\n    Proposal[] public proposals;\r\n    IERC20Token public tokenContract;\r\n    uint256 public targetBlockNumber;\r\n    mapping(address => uint256) public spendVotePower;\r\n\r\n    /// Create a new ballot to choose one of `proposalNames`.\r\n    constructor(\r\n        bytes32[] memory proposalNames,\r\n        IERC20Token _tokenContract,\r\n        uint256 _targetBlockNumber\r\n    ) {\r\n        tokenContract = IERC20Token(_tokenContract);\r\n        targetBlockNumber = _targetBlockNumber;\r\n        // For each of the provided proposal names,\r\n        // create a new proposal object and add it\r\n        // to the end of the array.\r\n        for (uint i = 0; i < proposalNames.length; i++) {\r\n            // `Proposal({...})` creates a temporary\r\n            // Proposal object and `proposals.push(...)`\r\n            // appends it to the end of `proposals`.\r\n            proposals.push(Proposal({name: proposalNames[i], voteCount: 0}));\r\n        }\r\n    }\r\n\r\n    /// Give your vote (including votes delegated to you)\r\n    /// to proposal `proposals[proposal].name`.\r\n    function vote(uint proposal, uint256 amount) external {\r\n        // TODO: Implement vote function\r\n        uint256 senderVotingPower = getVotePower(msg.sender);\r\n        require(\r\n            senderVotingPower >= amount,\r\n            \"TokenizedBallot: insufficient voting power\"\r\n        );\r\n        spendVotePower[msg.sender] += amount;\r\n        proposals[proposal].voteCount += amount;\r\n        emit Vote(msg.sender, proposal, amount);\r\n    }\r\n\r\n    function getVotePower(\r\n        address voter\r\n    ) public view returns (uint256 votePower_) {\r\n        votePower_ =\r\n            tokenContract.getPastVotes(voter, targetBlockNumber) -\r\n            spendVotePower[voter];\r\n    }\r\n\r\n    /// @dev Computes the winning proposal taking all\r\n    /// previous votes into account.\r\n    function winningProposal() public view returns (uint winningProposal_) {\r\n        uint winningVoteCount = 0;\r\n        for (uint p = 0; p < proposals.length; p++) {\r\n            if (proposals[p].voteCount > winningVoteCount) {\r\n                winningVoteCount = proposals[p].voteCount;\r\n                winningProposal_ = p;\r\n            }\r\n        }\r\n    }\r\n\r\n    // Calls winningProposal() function to get the index\r\n    // of the winner contained in the proposals array and then\r\n    // returns the name of the winner\r\n    function winnerName() external view returns (bytes32 winnerName_) {\r\n        winnerName_ = proposals[winningProposal()].name;\r\n    }\r\n}\r\n"
+    }
+  },
+  "settings": {
+    "optimizer": {
+      "enabled": true,
+      "runs": 200
+    },
+    "evmVersion": "paris",
+    "outputSelection": {
+      "*": {
+        "*": [
+          "abi",
+          "evm.bytecode",
+          "evm.deployedBytecode",
+          "evm.methodIdentifiers",
+          "metadata",
+          "devdoc",
+          "userdoc",
+          "storageLayout",
+          "evm.gasEstimates"
+        ],
+        "": [
+          "ast"
+        ]
+      }
+    },
+    "metadata": {
+      "useLiteralContent": true
+    }
+  }
+}

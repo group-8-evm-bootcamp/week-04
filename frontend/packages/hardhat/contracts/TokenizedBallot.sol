@@ -7,6 +7,7 @@ interface IERC20Token {
 }
 
 contract TokenizedBallot {
+    event Vote(address indexed _voter, uint256 _proposal, uint256 _amount);
     // This is a type for a single proposal.
     struct Proposal {
         bytes32 name;
@@ -49,6 +50,7 @@ contract TokenizedBallot {
         );
         spendVotePower[msg.sender] += amount;
         proposals[proposal].voteCount += amount;
+        emit Vote(msg.sender, proposal, amount);
     }
 
     function getVotePower(

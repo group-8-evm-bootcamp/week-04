@@ -1,5 +1,7 @@
 # Weekend Project - Week-04
 
+Deployed link: https://encode8ballot.vercel.app/ (note: because it's hobby plan. request is going to return 504, but the request still went through)
+
 ## Instructions
 
 This is a group activity for at least 3 students:

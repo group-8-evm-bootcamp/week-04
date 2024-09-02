@@ -1,4 +1,4 @@
-import { formatEther, parseEther } from "viem";
+import { formatEther } from "viem";
 import { useReadContract } from "wagmi";
 
 function TokenInfo(params: { address: `0x${string}` }) {
@@ -7,7 +7,7 @@ function TokenInfo(params: { address: `0x${string}` }) {
         <div className="card-body">
           <h2 className="card-title">Token Balance</h2>
           <TokenName></TokenName>
-          <TokenBalance address={params.address}></TokenBalance>
+          <TokenBalance address={params.address} />
         </div>
       </div>
     );
@@ -15,7 +15,7 @@ function TokenInfo(params: { address: `0x${string}` }) {
   
 function TokenName() {
     const { data, isError, isLoading } = useReadContract({
-      address: "0xEfEA5a3e02A08d273b890B11c9282D1046bb898e",
+      address: "0x97f7fC5fD2cF11E31053621f9AC5AdCC82895749",
       abi: [
         {
           constant: true,
@@ -44,7 +44,7 @@ function TokenName() {
   
 function TokenBalance(params: { address: `0x${string}` }) {
     const { data, isError, isLoading } = useReadContract({
-      address: "0xEfEA5a3e02A08d273b890B11c9282D1046bb898e",
+      address: "0x97f7fC5fD2cF11E31053621f9AC5AdCC82895749",
       abi: [
         {
           constant: true,

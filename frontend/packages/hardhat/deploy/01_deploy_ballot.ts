@@ -20,7 +20,7 @@ const deployBallotContract: DeployFunction = async function (hre: HardhatRuntime
   const PROPOSALS32 = PROPOSALS.map((prop) => toHex(prop, { size: 32 }));
 
   // Update this lmao
-  const targetBlockNumber = 6615216;
+  const targetBlockNumber = 6620055;
 
   await deploy("TokenizedBallot", {
     from: deployer,

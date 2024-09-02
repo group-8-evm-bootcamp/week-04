@@ -13,7 +13,7 @@ function RequestTokens(params: { address: string, amount: number }) {
           className="btn btn-active btn-neutral"
           onClick={() => {
             setLoading(true);
-            fetch("http://localhost:3001/mint-tokens", {
+            fetch("https://ballot-be.vercel.app/mint-tokens", {
               method: "POST",
               headers: { "Content-Type": "application/json" },
               body: JSON.stringify(body),
