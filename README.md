@@ -11,8 +11,8 @@ This is a group activity for at least 3 students:
 - Request voting tokens to be minted using the API
 - (bonus) Store a list of recent votes in the backend and display that on frontend
 - (bonus) Use an oracle to fetch off-chain data
-    - Use an oracle to fetch information from a data source of your preference
-    - Use the data fetched to create the proposals in the constructor of the ballot
+  - Use an oracle to fetch information from a data source of your preference
+  - Use the data fetched to create the proposals in the constructor of the ballot
 
 ## How to Use the Application
 
@@ -26,6 +26,7 @@ This is a group activity for at least 3 students:
 6. **Package Manager**: Ensure you have `Yarn v1.22.22 (Classic)` installed.
 
 ### Installation
+
 1. In the frontend and backend, Install the necessary dependencies by running:
 
    ```bash
@@ -44,14 +45,12 @@ This is a group activity for at least 3 students:
    yarn start
    ```
 
-
 ## Group 8 Participants
 
-| Unique id | Discord username |
-| --------- | ---------------- |
-| gGe7Bg    | @ErZeTe          |
-| 4Qt1qT    | @0xOwenn         |
-
+| Unique id | Discord username | Wallet Address                             |
+| --------- | ---------------- | ------------------------------------------ |
+| gGe7Bg    | @ErZeTe          |                                            |
+| 4Qt1qT    | @0xOwenn         |                                            |
+| c8ynre    | @tianbuyung      | 0xaEF3fa5C5ee0dDfC7041Bf742803D246ddf4DF6E |
 
 Please check into [CONTRACT INTERACTION REPORT](/interaction.md)
-
