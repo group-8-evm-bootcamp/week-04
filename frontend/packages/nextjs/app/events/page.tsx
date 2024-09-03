@@ -48,7 +48,7 @@ const Events: NextPage = () => {
                         <td className="text-center">
                           <Address address={event.args._voter} />
                         </td>
-                        <td>{event.args?._proposal || 0n}</td>
+                        <td>{event.args?._proposal?.toString() || 0n.toString()}</td>
                         <td>{formatEther(event.args?._amount || 0n)}</td>
                       </tr>
                     );
