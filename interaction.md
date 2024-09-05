@@ -24,3 +24,10 @@
     - [tx-hash-2](https://sepolia.etherscan.io/tx/0x5addb76dde1f343e9e4f808300d86795f5f18006a9c45e079affc726ffaa1764)
 13. Self delegate to my wallet:
     - [tx-hash](https://sepolia.etherscan.io/tx/0x3d48e6d0251dd369e20ab69dcbb5c7d22c1b15b99fce1c629515dc5caaa1825f)
+
+# @Joosh75 / Josh's interaction
+12. Mint token  with tx hash:
+    - [tx-hash-1](https://sepolia.etherscan.io/tx/0xc15c0e09ad210ac192b891f43cd9c1c35ba1e3b056475d7267597042b733eacc)
+
+13. Self delegate to my wallet:
+    - [tx-hash](https://sepolia.etherscan.io/tx/0x3d48e6d0251dd369e20ab69dcbb5c7d22c1b15b99fce1c629515dc5caaa1825f)
